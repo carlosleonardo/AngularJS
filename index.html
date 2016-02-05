@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>AngularJS</title>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+        <!-- requirejs se encarrega de carregar os outros scripts. Somente o main é carregado explicitamente,
+            pois estamos configurando o requirejs.
+        -->
+        <script data-main="js/main" src="bower_components/requirejs/require.js" charset="utf-8"></script>
+
+    </head>
+
+    <!--  Não precisamos usar ng-app aqui, pois o requirejs faz a carga -->
+    <body>
+        <div class="w3-container w3-teal">
+            <h1>Angular JS</h1>
+        </div>
+        <label ng-controller="ctrl1">{{nome}}</label>
+    </body>
+</html>
